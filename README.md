@@ -7,3 +7,5 @@ La aplicación INICIO cuenta con 3 templates: inicio.html, crear_carro.html y li
   Crear_carro que en la web lo llamé "registrar carro", es un template para registrar carros a la base de dato.
 
   Lista_carros que en la web lo llamé "mostrar carros", es un template que muestra o lista todos los carros ingresados anteriormente, si se da el caso que la búsqueda no coincide o no hay un carro registrado se mostrará un mensaje "Aun no se han ingresado datos de carros por el momento.".
+  
+Tambien se realizó los cambios pertinentes en el archivo settings.py. 
