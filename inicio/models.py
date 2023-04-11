@@ -9,5 +9,5 @@ class Carro(models.Model):
     precio = models.IntegerField()
     año_fabricacion = models.IntegerField()
 
-    # def __str__(self):
-    #     return f'El carro de modelo "{self.modelo}" es de la marca "{self.marca}" tiene el precio de "{self.precio} dolares" y su fabricación es del año "{self.año_fabricacion}"'
+    def __str__(self):
+        return f'El carro de modelo "{self.modelo}" es de la marca "{self.marca}" tiene el precio de "{self.precio} dolares" y su fabricación es del año "{self.año_fabricacion}"'
