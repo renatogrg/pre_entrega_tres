@@ -5,9 +5,24 @@
 <title>Página de Inicio</title>
 {% endblock title_head %}
 
+{% block l1_nav %}
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+{% endblock l1_nav %}
 
 {% block h1_header %}
 <h1 class="mx-auto my-0 text-uppercase">Bienvenidos</h1>
 <h2 class="text-white-50 mx-auto mt-2 mb-5">A MI PÁGINA PRINCIPAL</h2>
 <a class="btn btn-primary" href="#about">Iniciar</a>
 {% endblock h1_header %}
+
+{% block about_txt %}
+<h2 class="text-white mb-4">MI PÁGINA WEB</h2>
+<p class="text-white-50">
+    Esta es una página con las funciones de ingresar información acerca de carros y mostrar carros.
+</p>
+{% endblock about_txt %}
+
+
+{% block footer %}
+
+{% endblock footer %}

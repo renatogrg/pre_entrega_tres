@@ -1,0 +1,42 @@
+{% extends 'genericos/base.html' %}
+
+{% block title_head %}
+<title>Mostrar carros</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+<h1 class="mx-auto my-0 text-uppercase">LISTADO DE CARROS</h1>
+{% comment %} <h2 class="text-white-50 mx-auto mt-2 mb-5">LISTADO DE CARROS</h2> {% endcomment %}
+{% endblock h1_header %}
+
+
+{% block contenido %}
+<p>
+    <form style="color:white" action={% url 'inicio:listar_carros' %}>
+        {{formulario}}
+        <button>Buscar</button>
+    </form>
+</p>
+
+{% if carros %}
+    {% for carro in carros %}
+    <l1 class="text-white-50 mx-auto mt-2 mb-5">
+        Modelo: {{carro.modelo}} - Marca: {{carro.marca}} - Precio: ${{carro.precio}} - Año de Fabricación: {{carro.año_fabricacion}}<br>
+    </l1> 
+    {% endfor %}
+
+{% else %}
+<p style="color: white">Aun no se han ingresado datos de carros por el momento.</p>
+
+{% endif %}
+{% endblock contenido %}
+
+
+{% block about %}
+{% endblock about %}
+
+{% block contact%}
+{% endblock contact%}
+
+{% block footer %}
+{% endblock footer %}
